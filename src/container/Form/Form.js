@@ -1,7 +1,7 @@
 import React from 'react'
 import './Form.module.css'
 
-const Form = ({ form, handleSubmit, handleInputChange }) => (
+const Form = ({ handleSubmit, handleInputChange, form }) => (
   <form onSubmit={handleSubmit}>
     <input
     required
