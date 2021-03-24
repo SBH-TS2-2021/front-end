@@ -5,10 +5,9 @@ import Form from './Form'
 import axios from 'axios'
 import apiUrl from '../../apiConfig'
 
-
 // Class
 class CreateForm extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
 
     this.state = {
@@ -17,9 +16,10 @@ class CreateForm extends Component {
         zip: '',
         lender: '',
         nonprofit: '',
-        jobs: '',
+        jobsreported: '',
         state: ''
       },
+      probabilities: [],
       // created: false
       createdId: null
     }
@@ -30,31 +30,36 @@ class CreateForm extends Component {
     const { form } = this.state
     axios({
       method: 'post',
-      url: `${apiUrl}/form`,
-      data: { form }
-
+      url: `${apiUrl}`,
+      data: {
+        ...form,
+        nonprofit: 0,
+        lender: 'JPMorgan Chase Bank, National Association'
+      }
     })
-      .then(res => this.setState({ createdId: res.data.form._id }))
+      .then(res => this.setState({ probabilities: res.data.probabilities }))
       .catch(console.error)
   }
 
   handleInputChange = event => {
     event.persist()
     this.setState(state => {
-    return {
-      form: { ...state.form, [event.target.name]: event.target.value }
-    }
-  })
+      return {
+        form: { ...state.form, [event.target.name]: event.target.value }
+      }
+    })
   }
 
-  render () {
+  render() {
     const { form, createdId } = this.state
     if (createdId) {
-      return <Redirect to={`/show-resources/${this.state.createdId}`}/>
+      return <Redirect to={`/show-resources/${this.state.createdId}`} />
     }
     return (
       <Fragment>
-        <h2><center>tell us more about your business</center></h2>
+        <h2>
+          <center>tell us more about your business</center>
+        </h2>
         <Form
           form={form}
           handleSubmit={this.handleSubmit}

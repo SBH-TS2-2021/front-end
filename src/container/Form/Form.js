@@ -4,40 +4,40 @@ import './Form.module.css'
 const Form = ({ handleSubmit, handleInputChange, form }) => (
   <form onSubmit={handleSubmit}>
     <input
-    required
-    name="naics"
-    type="text"
-    placeholder="Enter NAICS number here"
-    value={form.naics}
-    // console.log(this.form.naics)
-    onChange={handleInputChange}
+      required
+      name="naics"
+      type="text"
+      placeholder="Enter NAICS number here"
+      value={form.naics}
+      // console.log(this.form.naics)
+      onChange={handleInputChange}
     />
     <input
-    required
-    name="zip"
-    type="text"
-    placeholder="Enter zipcode here"
-    value={form.zip}
-    onChange={handleInputChange}
+      required
+      name="zip"
+      type="text"
+      placeholder="Enter zipcode here"
+      value={form.zip}
+      onChange={handleInputChange}
     />
     <input
-    required
-    name="jobs"
-    type="text"
-    placeholder="Enter number of employees here please"
-    value={form.jobs}
-    onChange={handleInputChange}
+      required
+      name="jobsreported"
+      type="text"
+      placeholder="Enter number of employees here please"
+      value={form.jobsreported}
+      onChange={handleInputChange}
     />
     <input
-    required
-    name="state"
-    type="text"
-    placeholder="Enter your state here please"
-    value={form.state}
-    onChange={handleInputChange}
+      required
+      name="state"
+      type="text"
+      placeholder="Enter your state here please"
+      value={form.state}
+      onChange={handleInputChange}
     />
     <button type="submit">Submit</button>
-    </form>
-  )
+  </form>
+)
 
 export default Form
