@@ -1,5 +1,6 @@
 import React from 'react'
 import './Form.module.css'
+import lenders from './lenders'
 
 const Form = ({ handleSubmit, handleInputChange, form }) => (
   <form onSubmit={handleSubmit}>
@@ -36,6 +37,16 @@ const Form = ({ handleSubmit, handleInputChange, form }) => (
       value={form.state}
       onChange={handleInputChange}
     />
+    <div>
+      <label htmlFor="lender">Lender:</label>
+      <select id="lender" name="lender" onChange={handleInputChange}>
+        {lenders.map(lender => (
+          <option key={lender} value={lender}>
+            {lender}
+          </option>
+        ))}
+      </select>
+    </div>
     <button type="submit">Submit</button>
   </form>
 )
