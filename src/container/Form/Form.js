@@ -9,6 +9,7 @@ const Form = ({ form, handleSubmit, handleInputChange }) => (
     type="text"
     placeholder="Enter NAICS number here"
     value={form.naics}
+    // console.log(this.form.naics)
     onChange={handleInputChange}
     />
     <input

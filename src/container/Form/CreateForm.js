@@ -1,15 +1,15 @@
 import React, { Component, Fragment } from 'react'
 import { Redirect } from 'react-router-dom'
+import Form from './Form'
 
 import axios from 'axios'
 import apiUrl from '../../apiConfig'
 
-import Form from './Form'
 
 // Class
 class CreateForm extends Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
 
     this.state = {
       form: {
@@ -25,7 +25,7 @@ class CreateForm extends Component {
     }
   }
 
-  handleSubmit = (event) => {
+  handleSubmit = event => {
     event.preventDefault()
     const { form } = this.state
     axios({
@@ -38,7 +38,7 @@ class CreateForm extends Component {
       .catch(console.error)
   }
 
-  handleInputChange = (event) => {
+  handleInputChange = event => {
     event.persist()
     this.setState(state => {
     return {
@@ -48,14 +48,15 @@ class CreateForm extends Component {
   }
 
   render () {
-    if (this.state.createdId) {
+    const { form, createdId } = this.state
+    if (createdId) {
       return <Redirect to={`/show-resources/${this.state.createdId}`}/>
     }
     return (
       <Fragment>
-        <h2>tell us more about your business</h2>
+        <h2><center>tell us more about your business</center></h2>
         <Form
-          form={this.state.form}
+          form={form}
           handleSubmit={this.handleSubmit}
           handleInputChange={this.handleInputChange}
         />

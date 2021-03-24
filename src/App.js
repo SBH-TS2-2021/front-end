@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Layout from './components/Layout/Layout';
 // import { Route } from 'react-router-dom';
 import './App.css';
-import Form from './components/Form/Form'
+import Form from './container/Form/Form'
 import Resources from './components/Resources/Resources'
 
 // Routes
