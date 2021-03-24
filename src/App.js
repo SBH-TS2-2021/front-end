@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import Layout from './components/Layout/Layout'
-
+import Layout from './components/Layout/Layout';
+// import { Route, Link } from 'react-router-dom';
 import './App.css';
-import Form from './components/Form/Form'
+// import Form from './container/Form/Form'
 import Resources from './components/Resources/Resources'
 
+// Routes
+import CreateForm from './container/Form/CreateForm'
 
 class App extends Component {
   state = {
@@ -17,7 +19,7 @@ render() {
   return (
     <div>
     <Layout>
-    <Form />
+    <CreateForm />
     <Resources
       LoanAmount='60-70,000'
       Lender='TestBank'
@@ -30,4 +32,4 @@ render() {
 }
 }
 
-export default App;
+export default App
