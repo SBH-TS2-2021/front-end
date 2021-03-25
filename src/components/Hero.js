@@ -32,14 +32,6 @@ export default class Hero extends Component {
             predicting how much they might qualify for in loans from different
             lenders.
           </p>
-          <div className="hero-buttons">
-            <a href="#read-more" className="read-more-button hero-button">
-              Read More
-            </a>
-            <a href="#loan-form" className="predict-loan-button hero-button">
-              Predict Loan
-            </a>
-          </div>
         </div>
       </div>
     )

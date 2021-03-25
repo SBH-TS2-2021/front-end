@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import Layout from './components/Layout/Layout'
-// import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './App.css'
 // import Form from './container/Form/Form'
 import Resources from './components/Resources/Resources'
 
-// Routes
 import CreateForm from './container/Form/CreateForm'
 
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Copy from './components/Copy'
+import About from './components/About'
 
 class App extends Component {
   state = {
@@ -35,21 +35,27 @@ render() {
   return (
     <div className="app">
         <Header />
-        <Hero />
-        <Copy />
-    <Layout>
-    <CreateForm
+        <Route exact path='/' render={() => (
+          <>
+          <Hero />
+          <Copy />
+          <Layout>
+          <CreateForm
 
-      formData={this.formData}
-      showResult={this.showResult}
-    />
-    { this.state.result_visibility ?
-    <Resources
-      LoanAmount={this.state.probabilities}
-      Lender={this.state.lender}
-      LoanType='CARES PPP'
-      /> : null }
-    </Layout>
+            formData={this.formData}
+            showResult={this.showResult}
+          />
+          { this.state.result_visibility ?
+          <Resources
+            LoanAmount={this.state.probabilities}
+            Lender={this.state.lender}
+            LoanType='CARES PPP'
+            /> : null }
+          </Layout>
+          </>
+        )} />
+        <Route exact path='/about-us' component={About} />
+
     </div>
   );
 }
