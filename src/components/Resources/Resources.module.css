@@ -1,5 +1,4 @@
 .wrapper {
-  background-color: lightblue;
   text-align: center;
 }
 
@@ -9,6 +8,13 @@
   text-align: center;
 }
 
-p {
-  font-size: 20px;
+.finePrint {
+  font-size: 10px;
+}
+
+.loan {
+}
+
+.noData {
+  color: #ff3333;
 }

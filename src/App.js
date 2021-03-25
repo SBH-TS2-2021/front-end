@@ -15,6 +15,7 @@ import Copy from './components/Copy'
 class App extends Component {
   state = {
     result_visibility: false,
+    no_result_visibility: false,
       lender: '',
       nonprofit: '',
       jobsreported: '',
@@ -28,8 +29,16 @@ class App extends Component {
   }
 
   showResult = () => {
-  this.setState({result_visibility: true})
-}
+    this.setState({result_visibility: true, no_result_visibility: false})
+  }
+
+  noResult = () => {
+    this.setState({no_result_visibility: true, result_visibility: false})
+  }
+
+  clearResult = () => {
+    this.setState({no_result_visibility: false, result_visibility: false})
+  }
 
 render() {
   return (
@@ -42,12 +51,18 @@ render() {
 
       formData={this.formData}
       showResult={this.showResult}
+      noResult={this.noResult}
+      clearResult={this.clearResult}
     />
+
+    { this.state.no_result_visibility ?
+      "This lender isnt a good match, please try with another lender"
+     : null }
+
     { this.state.result_visibility ?
     <Resources
       LoanAmount={this.state.probabilities}
       Lender={this.state.lender}
-      LoanType='CARES PPP'
       /> : null }
     </Layout>
     </div>
