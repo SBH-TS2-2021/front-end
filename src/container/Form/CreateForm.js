@@ -45,8 +45,7 @@ class CreateForm extends Component {
       .then(res => this.setState({ probabilities: res.data.probabilities }))
       .then(() => this.props.formData(this.state))
       .then(() => this.props.showResult())
-      .catch(console.error)
-    console.log(form)
+      .catch(() => this.props.noResult())
   }
 
   handleInputChange = event => {
@@ -76,6 +75,7 @@ class CreateForm extends Component {
       // created: false
       createdId: null
     })
+    this.props.clearResult()
   }
 
   render() {
