@@ -13,19 +13,46 @@ import Hero from './components/Hero'
 import Copy from './components/Copy'
 
 class App extends Component {
-  render() {
-    return (
-      <div className="app">
+  state = {
+    result_visibility: false,
+      lender: '',
+      nonprofit: '',
+      jobsreported: '',
+      state: '',
+    probabilities: []
+  }
+
+  formData = (formData) => {
+      this.setState({ probabilities: formData.probabilities })
+      this.setState({ lender: formData.form.lender })
+  }
+
+  showResult = () => {
+  this.setState({result_visibility: true})
+}
+
+render() {
+  return (
+    <div className="app">
         <Header />
         <Hero />
         <Copy />
-        <Layout>
-          <CreateForm />
-          <Resources />
-        </Layout>
-      </div>
-    )
-  }
+    <Layout>
+    <CreateForm
+
+      formData={this.formData}
+      showResult={this.showResult}
+    />
+    { this.state.result_visibility ?
+    <Resources
+      LoanAmount={this.state.probabilities}
+      Lender={this.state.lender}
+      LoanType='CARES PPP'
+      /> : null }
+    </Layout>
+    </div>
+  );
+}
 }
 
 export default App

@@ -1,0 +1,28 @@
+.loan5to10mil {
+  color: #578045;
+}
+
+.loan2to5mil {
+  color: #62914e;
+}
+
+.loan1to2mil {
+  color: #62914e;
+}
+
+.loan350kto1mil {
+  color: #6ea157;
+}
+
+.loan150to350k {
+  color: #7bac66;
+
+}
+
+.loan1to150k {
+  color: #98be87;
+}
+
+.noData {
+  color: #ff3333;
+}
