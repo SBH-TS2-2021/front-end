@@ -1,24 +1,24 @@
-.xxl {
+.loan5to10mil {
   color: #578045;
 }
 
-.xl {
+.loan2to5mil {
   color: #62914e;
 }
 
-.l {
+.loan350kto1mil {
   color: #6ea157;
 }
 
-.m {
+.loan150to350k {
   color: #7bac66;
 
 }
 
-.s {
+.loan1to150k {
   color: #98be87;
 }
 
-.xs {
-  color: #a6c798;
+.noData {
+  color: #ff3333;
 }
