@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+.app {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  font-family: var(--title-font);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  font-size: var(--h1);
+  margin-bottom: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.subtitle {
+  font-size: var(--h2);
+  margin-top: 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.hero-img-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-img {
+  width: 757px;
+  border-radius: 20rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-content {
+  margin: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-button {
+  outline: none;
+  font-family: var(--content-font);
+  font-size: var(--body);
+  border: 2px solid var(--money-green-dark);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  min-width: 160px;
+  transition: all 0.1s linear;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px var(--money-green-dark);
+}
+
+.hero-button:active {
+  outline: none;
+  box-shadow: 0 0 3px 3px var(--money-green-dark);
+}
+
+.read-more-button {
+  color: var(--money-green-dark);
+}
+
+.predict-loan-button {
+  color: #fff;
+  background-color: var(--money-green-dark);
 }
