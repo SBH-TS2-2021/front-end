@@ -10,15 +10,17 @@ export default class Hero extends Component {
           <small>
             Photo by{' '}
             <a
-              href="https://unsplash.com/@awcreativeut?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              href="https://unsplash.com/@soucarlosmagno?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              className="form-link"
               target="_blank"
               rel="noreferrer"
             >
-              Adam Winger
+              Carlos Magno
             </a>{' '}
             on{' '}
             <a
               href="https://unsplash.com/s/photos/hair-salon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              className="form-link"
               target="_blank"
               rel="noreferrer"
             >
@@ -32,14 +34,17 @@ export default class Hero extends Component {
             predicting how much they might qualify for in loans from different
             lenders.
           </p>
-          <div className="hero-buttons">
-            <a href="#read-more" className="read-more-button hero-button">
+          {/* <div className="hero-buttons">
+            <a href="#read-more" className="secondary-button ppp-button">
               Read More
             </a>
-            <a href="#loan-form" className="predict-loan-button hero-button">
+            <a
+              href="#loan-form-container"
+              className="primary-button ppp-button"
+            >
               Predict Loan
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     )
