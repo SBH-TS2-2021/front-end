@@ -30,21 +30,10 @@ export default class Hero extends Component {
         </div>
         <div className="hero-content">
           <p className="hero-copy">
-            Welcome to Dough Boi! We’re here to help small business owners by
-            predicting how much they might qualify for in loans from different
-            lenders.
+            Welcome to Product Name! We’re here to help small business owners by
+            predicting how much they might qualify for from various loan or
+            grant programs.
           </p>
-          {/* <div className="hero-buttons">
-            <a href="#read-more" className="secondary-button ppp-button">
-              Read More
-            </a>
-            <a
-              href="#loan-form-container"
-              className="primary-button ppp-button"
-            >
-              Predict Loan
-            </a>
-          </div> */}
         </div>
       </div>
     )
