@@ -33,12 +33,12 @@ export default class Hero extends Component {
             lenders.
           </p>
           <div className="hero-buttons">
-            <button type="button" className="read-more-button hero-button">
+            <a href="#read-more" className="read-more-button hero-button">
               Read More
-            </button>
-            <button type="button" className="predict-loan-button hero-button">
+            </a>
+            <a href="#loan-form" className="predict-loan-button hero-button">
               Predict Loan
-            </button>
+            </a>
           </div>
         </div>
       </div>

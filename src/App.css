@@ -5,15 +5,18 @@
 }
 
 header {
-  font-family: var(--title-font);
+  margin-left: 10rem;
+  margin-bottom: 2rem;
 }
 
 .title {
+  font-family: var(--title-font);
   font-size: var(--h1);
   margin-bottom: 0;
 }
 
 .subtitle {
+  font-family: var(--title-font);
   font-size: var(--h2);
   margin-top: 0;
 }
@@ -44,13 +47,15 @@ header {
 }
 
 .hero-button {
+  text-decoration: none;
+  text-align: center;
   outline: none;
   font-family: var(--content-font);
   font-size: var(--body);
   border: 2px solid var(--money-green-dark);
   border-radius: 0.5rem;
   padding: 1rem;
-  min-width: 160px;
+  min-width: 120px;
   transition: all 0.1s linear;
 }
 
@@ -67,9 +72,22 @@ header {
 
 .read-more-button {
   color: var(--money-green-dark);
+  background-color: #fff;
 }
 
 .predict-loan-button {
   color: #fff;
   background-color: var(--money-green-dark);
+}
+
+.read-more {
+  margin: 6rem 12rem;
+}
+
+.read-more-title {
+  text-align: center;
+}
+
+.read-more-copy {
+  text-align: justify;
 }
