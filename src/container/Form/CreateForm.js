@@ -5,6 +5,8 @@ import Form from './Form'
 import axios from 'axios'
 import apiUrl from '../../apiConfig'
 
+import codes from './naicscodes'
+
 // Class
 class CreateForm extends Component {
   constructor(props) {
@@ -25,10 +27,13 @@ class CreateForm extends Component {
     }
   }
 
-
   handleSubmit = event => {
     event.preventDefault()
     const { form } = this.state
+
+    form.lender = form.lender === 'Other' ? 'other' : form.lender
+    if (codes.includes(form.naics) === false) form.naics = 'other'
+
     axios({
       method: 'post',
       url: `${apiUrl}`,
@@ -39,7 +44,7 @@ class CreateForm extends Component {
     })
       .then(res => this.setState({ probabilities: res.data.probabilities }))
       .catch(console.error)
-      console.log(form)
+    console.log(form)
   }
 
   handleInputChange = event => {
@@ -56,17 +61,19 @@ class CreateForm extends Component {
   // }
 
   handleReset = event => {
-    this.setState({ form: {
-      naics: '',
-      zip: '',
-      lender: '',
-      nonprofit: '',
-      jobsreported: '',
-      state: ''
-    },
-    probabilities: [],
-    // created: false
-    createdId: null })
+    this.setState({
+      form: {
+        naics: '',
+        zip: '',
+        lender: '',
+        nonprofit: '',
+        jobsreported: '',
+        state: ''
+      },
+      probabilities: [],
+      // created: false
+      createdId: null
+    })
   }
 
   render() {
