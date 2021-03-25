@@ -7,7 +7,7 @@ export default class Header extends Component {
     return (
       <header>
         <div className="titles">
-          <h1 className="title">Dough Boi (working title)</h1>
+          <h1 className="title">StimuLink</h1>
           <h2 className="subtitle">Helping your company get back on track</h2>
         </div>
         <div className="nav">

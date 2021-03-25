@@ -33,8 +33,8 @@ header {
 }
 
 .hero-img {
-  width: 757px;
-  border-radius: 20rem;
+  width: 720px;
+  border-radius: 4rem;
 }
 
 .hero-content {
@@ -46,7 +46,7 @@ header {
   justify-content: space-evenly;
 }
 
-.hero-button {
+.ppp-button {
   text-decoration: none;
   text-align: center;
   outline: none;
@@ -59,23 +59,23 @@ header {
   transition: all 0.1s linear;
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.ppp-button:hover,
+.ppp-button:focus {
   outline: none;
   box-shadow: 0 0 1px 1px var(--money-green-dark);
 }
 
-.hero-button:active {
+.ppp-button:active {
   outline: none;
   box-shadow: 0 0 3px 3px var(--money-green-dark);
 }
 
-.read-more-button {
+.secondary-button {
   color: var(--money-green-dark);
   background-color: #fff;
 }
 
-.predict-loan-button {
+.primary-button {
   color: #fff;
   background-color: var(--money-green-dark);
 }
@@ -99,7 +99,7 @@ header {
 }
 
 .about-us-container {
-  margin: 12rem;
+  margin: 6rem 12rem;
 }
 
 .about-link {
@@ -142,4 +142,80 @@ header {
 
 .icon {
   width: 48px;
+}
+
+.loan-form-container {
+  background-color: var(--money-green-light);
+  border: 1px solid var(--money-green-dark);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.loan-form-title {
+  margin: 2rem;
+}
+
+.loan-form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.form-link {
+  color: #000;
+}
+
+.naics,
+.jobsreported,
+.lender {
+  display: grid;
+  grid-template-columns: 224px 1fr;
+  margin: 1.5rem 1.5rem 3rem 3rem;
+}
+
+.lender-type {
+  grid-column: 1 / span 2;
+}
+
+.naics-label,
+.jobsreported-label,
+.lender-label {
+  grid-column: 1 / span 1;
+  padding: 0.5rem;
+}
+
+.form-input {
+  font-size: var(--body);
+  border: 1px solid var(--money-green-dark);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  max-width: 300px;
+}
+
+#naics,
+#jobsreported,
+#lender {
+  grid-column: 2 / span 1;
+}
+
+.naics-help {
+  grid-column: 2 / span 1;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0 4rem;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 0 auto;
 }
