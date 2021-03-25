@@ -2,7 +2,7 @@
 
 :root {
   --title-font: 'Rosario', sans-serif;
-  --content-font: 'Arimo', sans-serif;
+  --content-font: 'Arial', 'Arimo', sans-serif;
 
   --money-green-light: #edf3f0;
   --money-green: #cadcd3;
