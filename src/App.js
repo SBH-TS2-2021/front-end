@@ -10,22 +10,39 @@ import CreateForm from './container/Form/CreateForm'
 
 class App extends Component {
   state = {
-    result_visibility: false
+    result_visibility: false,
+      lender: '',
+      nonprofit: '',
+      jobsreported: '',
+      state: '',
+    probabilities: []
   }
 
-  // this.setState({result_visibility: true})
+  formData = (formData) => {
+      this.setState({ probabilities: formData.probabilities })
+      this.setState({ lender: formData.form.lender })
+  }
+
+  showResult = () => {
+  this.setState({result_visibility: true})
+}
 
 render() {
   return (
     <div>
     <Layout>
-    <CreateForm />
+    <CreateForm
+
+      formData={this.formData}
+      showResult={this.showResult}
+    />
+    { this.state.result_visibility ?
     <Resources
-      LoanAmount='60-70,000'
-      Lender='TestBank'
+      LoanAmount={this.state.probabilities}
+      Lender={this.state.lender}
       LoanType='CARES PPP'
-      Accuracy="80%"
-      Visible={this.state.result_visibility}/>
+      Accuracy={this.state.probabilities[0]}
+      /> : null }
     </Layout>
     </div>
   );

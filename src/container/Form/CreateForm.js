@@ -38,6 +38,8 @@ class CreateForm extends Component {
       }
     })
       .then(res => this.setState({ probabilities: res.data.probabilities }))
+      .then(() => this.props.formData(this.state))
+      .then(() => this.props.showResult())
       .catch(console.error)
   }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-// import style from './Resources.module.css'
+import style from './Resources.module.css'
 
 const resources = (props) => {
 
@@ -12,9 +12,10 @@ const resources = (props) => {
     <p> Based on the information provided, we estimate you are eligible for PROPS.MONEY
     from {props.Lender} as a {props.LoanType}. While we can not gaurentee, this would be a
     good place to start. Try selecting a different lender for another result.</p>
-    <p> Results are predicted with {props.Accuracy} accuracy. No amounts are gaurenteed. </p>
+    <p> *Results are predicted with {props.Accuracy} accuracy. No amounts are gaurenteed. </p>
     </div>
     )
   }
+
 
 export default resources
