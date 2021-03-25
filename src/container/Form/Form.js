@@ -4,8 +4,7 @@ import lenders from './lenders'
 
 const Form = ({ handleSubmit, handleInputChange, form, handleReset }) => (
   <form onSubmit={handleSubmit}>
-  Where is your business located?
-  <center>
+  <span>Where is your business located?</span>
   <br />
   <br />
     <center>
@@ -22,47 +21,37 @@ const Form = ({ handleSubmit, handleInputChange, form, handleReset }) => (
     </center>
     <br />
     <span>What kind of business is it?</span>
+    <br/>
+    <br/>
+    <center>
+    <span>Enter NAICS Code:</span>
     <input
     required
     name="naics"
     type="text"
-    placeholder="Enter NAICS number here"
+    placeholder="XXXXXX"
     value={form.naics}
-    // console.log(this.form.naics)
     onChange={handleInputChange}
     />
+    <br/>
+    <small>
+    Find your NAICS code <a href="https://www.naics.com/naics-identification-help/" target="_blank" rel="noreferrer">here</a>.
+    </small>
     </center>
     <br/><br/>
     <span>Nonprofit status:</span>
-    <div className="radio">
-         <label>
+    <div className="checkbox">
+         <label htmlFor="nonprofit">
          <center>
            <input
             name="nonprofit"
-             type="radio"
+             type="checkbox"
              value="Yes"
-             checked={form.nonprofit === "Yes"}
-             onChange={handleInputChange}
            />
            My business is a nonprofit.
            </center>
          </label>
          </div>
-        <div className="radio">
-         <label>
-          <center>
-         <input
-          name="nonprofit"
-           type="radio"
-           value="No"
-           checked={form.nonprofit === "No"}
-           onChange={handleInputChange}
-         />
-         My business is not a nonprofit.
-        </center>
-       </label>
-       <small><center>If you aren't sure, please choose 'No'.</center></small>
-       </div>
       <br/><br/>
     <span>Number of employees:</span>
     <center>
