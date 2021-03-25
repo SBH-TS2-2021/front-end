@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import Form from './Form'
 
@@ -75,7 +75,7 @@ class CreateForm extends Component {
       return <Redirect to={`/show-resources/${this.state.createdId}`} />
     }
     return (
-      <Fragment>
+      <div id="loan-form">
         <h2>
           <center>Try our loan predictor!</center>
         </h2>
@@ -85,7 +85,7 @@ class CreateForm extends Component {
           handleInputChange={this.handleInputChange}
           handleReset={this.handleReset}
         />
-      </Fragment>
+      </div>
     )
   }
 }

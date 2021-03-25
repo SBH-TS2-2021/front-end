@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Rosario&display=swap');
+
+:root {
+  --title-font: 'Rosario', sans-serif;
+  --content-font: 'Arial', 'Arimo', sans-serif;
+
+  --money-green-light: #edf3f0;
+  --money-green: #cadcd3;
+  --money-green-dark: #293e33;
+
+  font-size: 16px;
+  --h1: 3.25rem;
+  --h2: 2rem;
+  --body: 1.25rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-size: var(--body);
+  font-family: var(--content-font);
+
+  background-color: var(--money-green);
 }
