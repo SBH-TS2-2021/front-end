@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Layout from './components/Layout/Layout'
 // import { Route, Link } from 'react-router-dom';
 import './App.css'
 // import Form from './container/Form/Form'
@@ -43,10 +42,10 @@ class App extends Component {
 render() {
   return (
     <div className="app">
+
         <Header />
         <Hero />
         <Copy />
-    <Layout>
     <CreateForm
 
       formData={this.formData}
@@ -55,6 +54,7 @@ render() {
       clearResult={this.clearResult}
     />
 
+    <div className="results">
     { this.state.no_result_visibility ?
       "This lender isnt a good match, please try with another lender"
      : null }
@@ -64,7 +64,7 @@ render() {
       LoanAmount={this.state.probabilities}
       Lender={this.state.lender}
       /> : null }
-    </Layout>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import './Form.module.css'
 import lenders from './lenders'
 
 const Form = ({ handleSubmit, handleInputChange, form, handleReset }) => (
