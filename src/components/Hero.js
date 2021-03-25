@@ -10,15 +10,17 @@ export default class Hero extends Component {
           <small>
             Photo by{' '}
             <a
-              href="https://unsplash.com/@awcreativeut?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              href="https://unsplash.com/@soucarlosmagno?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              className="form-link"
               target="_blank"
               rel="noreferrer"
             >
-              Adam Winger
+              Carlos Magno
             </a>{' '}
             on{' '}
             <a
               href="https://unsplash.com/s/photos/hair-salon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              className="form-link"
               target="_blank"
               rel="noreferrer"
             >
@@ -28,18 +30,10 @@ export default class Hero extends Component {
         </div>
         <div className="hero-content">
           <p className="hero-copy">
-            Welcome to Dough Boi! We’re here to help small business owners by
-            predicting how much they might qualify for in loans from different
-            lenders.
+            Welcome to Product Name! We’re here to help small business owners by
+            predicting how much they might qualify for from various loan or
+            grant programs.
           </p>
-          <div className="hero-buttons">
-            <a href="#read-more" className="read-more-button hero-button">
-              Read More
-            </a>
-            <a href="#loan-form" className="predict-loan-button hero-button">
-              Predict Loan
-            </a>
-          </div>
         </div>
       </div>
     )

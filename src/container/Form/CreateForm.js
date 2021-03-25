@@ -84,10 +84,8 @@ class CreateForm extends Component {
       return <Redirect to={`/show-resources/${this.state.createdId}`} />
     }
     return (
-      <div id="loan-form">
-        <h2>
-          <center>Try our loan predictor!</center>
-        </h2>
+      <div id="loan-form-container" className="loan-form-container">
+        <h2 className="loan-form-title subtitle">Try our loan predictor!</h2>
         <Form
           form={form}
           handleSubmit={this.handleSubmit}
