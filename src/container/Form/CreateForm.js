@@ -31,15 +31,23 @@ class CreateForm extends Component {
     event.preventDefault()
     const { form } = this.state
 
-    form.lender = form.lender === 'Other' ? 'other' : form.lender
-    if (codes.includes(form.naics) === false) form.naics = 'other'
+    let lender = form.lender
+    if (form.lender === 'Other') {
+      lender = 'other'
+    }
+
+    let naics = form.naics
+    if (codes.includes(form.naics) === false) {
+      naics = 'other'
+    }
 
     axios({
       method: 'post',
       url: `${apiUrl}`,
       data: {
-        ...form,
-        nonprofit: 0
+        lender: lender,
+        jobsreported: form.jobsreported,
+        naics: naics
       }
     })
       .then(res => this.setState({ probabilities: res.data.probabilities }))

@@ -30,7 +30,7 @@ export default class Hero extends Component {
         </div>
         <div className="hero-content">
           <p className="hero-copy">
-            Welcome to Product Name! We’re here to help small business owners by
+            Welcome to StimuLink! We’re here to help small business owners by
             predicting how much they might qualify for from various loan or
             grant programs.
           </p>
