@@ -2,44 +2,65 @@ const teamMembers = [
   {
     id: 1,
     name: 'Atul Kapila',
-    backgroundUrl: 'https://media-exp1.licdn.com/dms/image/C5603AQGSRlwo_YJZow/profile-displayphoto-shrink_800_800/0/1606608340894?e=1622073600&v=beta&t=neymHF2Ix_dqoPiRWv9dlRV3o0BC-UA-HZKeTI5rmwU',
-    description: 'UX Designer'
+    backgroundUrl:
+      'https://ca.slack-edge.com/T0351JZQ0-U015YQTVC7J-c51e070096db-512',
+    description: 'UX Designer',
+    linkedin: 'https://www.linkedin.com/in/atul-kapila/',
+    portfolio: 'https://atulkapila.squarespace.com/'
   },
   {
     id: 2,
     name: 'Cesarina Garcia',
-    backgroundUrl: 'https://media-exp1.licdn.com/dms/image/C4D03AQFA79UHLvMeHg/profile-displayphoto-shrink_200_200/0/1607398910059?e=1622073600&v=beta&t=wkVAE5c39dcMEf78zG2VnnVNYznlSfUjdI0vT6QwDW8',
-    description: 'Software Engineer'
+    backgroundUrl:
+      'https://ca.slack-edge.com/T0351JZQ0-U01DZFYQF4P-94e9508a1cc6-512',
+    description: 'Software Engineer',
+    linkedin: 'https://www.linkedin.com/in/cesarina-garcia/',
+    portfolio: 'https://cesarinag.netlify.app/'
   },
   {
     id: 3,
     name: 'Derek Murphy',
-    backgroundUrl: 'https://media-exp1.licdn.com/dms/image/C4E03AQEzfwW92P5csQ/profile-displayphoto-shrink_800_800/0/1582143681895?e=1622073600&v=beta&t=xKoTdAhU_Qninf6K5nJrxXqTRVgPFI7cXaIsqaHgVuw',
-    description: 'Software Engineer'
+    backgroundUrl:
+      'https://ca.slack-edge.com/T0351JZQ0-UPFTFEAFM-41b88a7ccebf-512',
+    description: 'Software Engineer',
+    linkedin: 'https://www.linkedin.com/in/derekmurphy93/',
+    portfolio: 'https://derekmurphy1993.github.io/'
   },
   {
     id: 4,
     name: 'Emily Tersoff',
-    backgroundUrl: 'https://ca.slack-edge.com/T0351JZQ0-URP698A6P-6583ca4ebc8c-512',
-    description: 'UX Designer'
+    backgroundUrl:
+      'https://ca.slack-edge.com/T0351JZQ0-URP698A6P-6583ca4ebc8c-512',
+    description: 'UX Designer',
+    linkedin: 'https://www.linkedin.com/in/emily-tersoff/',
+    portfolio: 'https://emilytersoff.com/'
   },
   {
     id: 5,
     name: 'Fahim Ali',
-    backgroundUrl: 'https://ca.slack-edge.com/T0351JZQ0-U01FF1MLGBD-0bdae66311d8-512',
-    description: 'Software Engineer'
+    backgroundUrl:
+      'https://ca.slack-edge.com/T0351JZQ0-U01FF1MLGBD-0bdae66311d8-512',
+    description: 'Software Engineer',
+    linkedin: 'https://www.linkedin.com/in/fahimali/',
+    portfolio: 'https://fahali.github.io/'
   },
   {
     id: 6,
     name: 'Jaco Lau',
-    backgroundUrl: 'https://media-exp1.licdn.com/dms/image/C5603AQGFEFglIMZ5LQ/profile-displayphoto-shrink_800_800/0/1517369987380?e=1622073600&v=beta&t=0TMPKBE-acieqDJphtoZ4bQdLYp6eRKJbAp-7rEf2R4',
-    description: 'Data Scientist'
+    backgroundUrl:
+      'https://ca.slack-edge.com/T0351JZQ0-U01DFEW4MQV-39c4454418e5-512',
+    description: 'Data Scientist',
+    linkedin: 'https://www.linkedin.com/in/jaco-lau-499ab767/',
+    portfolio: '#'
   },
   {
     id: 7,
     name: 'Kevin Renois',
-    backgroundUrl: 'https://media-exp1.licdn.com/dms/image/C5603AQFLO6P_DxuAzw/profile-displayphoto-shrink_800_800/0/1592103866602?e=1622073600&v=beta&t=8voGdBxB6WxERTUqNlDximfb9KbuHv5wx7FqvqS4h3c',
-    description: 'Data Scientist'
+    backgroundUrl:
+      'https://ca.slack-edge.com/T0351JZQ0-UUWJ5EJUB-52bae3e920b3-512',
+    description: 'Data Scientist',
+    linkedin: 'https://www.linkedin.com/in/kevinrenois/',
+    portfolio: '#'
   }
 ]
 

@@ -1,31 +1,43 @@
 import React from 'react'
-// import data
 import teamMembers from './team-members'
-import Card from 'react-bootstrap/Card'
-
-const cardContainerLayout = {
-  display: 'flex',
-  justifyContent: 'center',
-  flexFlow: 'row wrap'
-}
+import limg from './linkedinicon.png'
+import pimg from './websiteicon.png'
 
 // create component out
 const TeamMemberCards = () => {
   // refer to each one as member
-  const teamCards = teamMembers.map(member => {
-    return (
-      <Card key={member.id} style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={member.backgroundUrl} />
-        <Card.Body>
-          <Card.Title>{member.name}</Card.Title>
-          <Card.Text>{member.description}</Card.Text>
-        </Card.Body>
-      </Card>
-    )
-  })
+
   return (
-    <div style={cardContainerLayout}>
-      { teamCards }
+    <div className="team-members">
+      {teamMembers.map(member => (
+        <div className="member" key={member.id}>
+          <img
+            src={member.backgroundUrl}
+            alt={member.name}
+            className="profile-pic"
+          />
+          <div className="demo-info">
+            <p className="name">{member.name}</p>
+            <p className="role">{member.description}</p>
+          </div>
+          <div className="social-icons">
+            <a href={member.linkedin} target="_blank" rel="noreferrer">
+              <img
+                src={limg}
+                alt={`${member.name} LinkedIn`}
+                className="icon"
+              />
+            </a>
+            <a href={member.portfolio} target="_blank" rel="noreferrer">
+              <img
+                src={pimg}
+                alt={`${member.name} portfolio`}
+                className="icon"
+              />
+            </a>
+          </div>
+        </div>
+      ))}
     </div>
   )
 }
