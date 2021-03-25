@@ -4,7 +4,7 @@ import React from 'react'
 const resources = (props) => {
 
   return (
-    <h2> This will be the results! </h2>
+    <h2><center> This will be the results! </center></h2>
     )
   }
 

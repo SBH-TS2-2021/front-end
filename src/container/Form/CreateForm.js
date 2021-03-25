@@ -25,6 +25,7 @@ class CreateForm extends Component {
     }
   }
 
+
   handleSubmit = event => {
     event.preventDefault()
     const { form } = this.state
@@ -38,6 +39,7 @@ class CreateForm extends Component {
     })
       .then(res => this.setState({ probabilities: res.data.probabilities }))
       .catch(console.error)
+      console.log(form)
   }
 
   handleInputChange = event => {
@@ -49,6 +51,24 @@ class CreateForm extends Component {
     })
   }
 
+  // handleReset = event => {
+  //     this.form.reset()
+  // }
+
+  handleReset = event => {
+    this.setState({ form: {
+      naics: '',
+      zip: '',
+      lender: '',
+      nonprofit: '',
+      jobsreported: '',
+      state: ''
+    },
+    probabilities: [],
+    // created: false
+    createdId: null })
+  }
+
   render() {
     const { form, createdId } = this.state
     if (createdId) {
@@ -57,12 +77,13 @@ class CreateForm extends Component {
     return (
       <Fragment>
         <h2>
-          <center>tell us more about your business</center>
+          <center>Try our loan predictor!</center>
         </h2>
         <Form
           form={form}
           handleSubmit={this.handleSubmit}
           handleInputChange={this.handleInputChange}
+          handleReset={this.handleReset}
         />
       </Fragment>
     )
