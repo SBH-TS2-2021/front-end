@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import Form from './Form'
 
@@ -25,6 +25,7 @@ class CreateForm extends Component {
     }
   }
 
+
   handleSubmit = event => {
     event.preventDefault()
     const { form } = this.state
@@ -33,14 +34,14 @@ class CreateForm extends Component {
       url: `${apiUrl}`,
       data: {
         ...form,
-        nonprofit: 0,
-        lender: 'JPMorgan Chase Bank, National Association'
+        nonprofit: 0
       }
     })
       .then(res => this.setState({ probabilities: res.data.probabilities }))
       .then(() => this.props.formData(this.state))
       .then(() => this.props.showResult())
       .catch(console.error)
+      console.log(form)
   }
 
   handleInputChange = event => {
@@ -52,22 +53,41 @@ class CreateForm extends Component {
     })
   }
 
+  // handleReset = event => {
+  //     this.form.reset()
+  // }
+
+  handleReset = event => {
+    this.setState({ form: {
+      naics: '',
+      zip: '',
+      lender: '',
+      nonprofit: '',
+      jobsreported: '',
+      state: ''
+    },
+    probabilities: [],
+    // created: false
+    createdId: null })
+  }
+
   render() {
     const { form, createdId } = this.state
     if (createdId) {
       return <Redirect to={`/show-resources/${this.state.createdId}`} />
     }
     return (
-      <Fragment>
+      <div id="loan-form">
         <h2>
-          <center>tell us more about your business</center>
+          <center>Try our loan predictor!</center>
         </h2>
         <Form
           form={form}
           handleSubmit={this.handleSubmit}
           handleInputChange={this.handleInputChange}
+          handleReset={this.handleReset}
         />
-      </Fragment>
+      </div>
     )
   }
 }

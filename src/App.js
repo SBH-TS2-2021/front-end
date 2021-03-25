@@ -1,12 +1,16 @@
-import React, { Component } from 'react';
-import Layout from './components/Layout/Layout';
+import React, { Component } from 'react'
+import Layout from './components/Layout/Layout'
 // import { Route, Link } from 'react-router-dom';
-import './App.css';
+import './App.css'
 // import Form from './container/Form/Form'
 import Resources from './components/Resources/Resources'
 
 // Routes
 import CreateForm from './container/Form/CreateForm'
+
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Copy from './components/Copy'
 
 class App extends Component {
   state = {
@@ -29,7 +33,10 @@ class App extends Component {
 
 render() {
   return (
-    <div>
+    <div className="app">
+        <Header />
+        <Hero />
+        <Copy />
     <Layout>
     <CreateForm
 
@@ -41,7 +48,6 @@ render() {
       LoanAmount={this.state.probabilities}
       Lender={this.state.lender}
       LoanType='CARES PPP'
-      Accuracy={this.state.probabilities[0]}
       /> : null }
     </Layout>
     </div>
