@@ -34,8 +34,7 @@ class CreateForm extends Component {
       url: `${apiUrl}`,
       data: {
         ...form,
-        nonprofit: 0,
-        lender: 'JPMorgan Chase Bank, National Association'
+        nonprofit: 0
       }
     })
       .then(res => this.setState({ probabilities: res.data.probabilities }))
