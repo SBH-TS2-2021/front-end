@@ -4,9 +4,9 @@ export default class Copy extends Component {
   render() {
     return (
       <div id="read-more" className="read-more">
-        <h2 className="read-more-title subtitle">Why Dough Boi?</h2>
+        <h2 className="read-more-title subtitle">Why StimuLink?</h2>
         <p className="read-more-copy">
-          We built Product Name as a starting point for small business owners to
+          We built StimuLink as a starting point for small business owners to
           find loans or grants to cover lost revenue from time spent closed or
           at limited capacity. Based on data about previously awarded loans and
           grants, we can predict a given lender’s likely loan range for your
