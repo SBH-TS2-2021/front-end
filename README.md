@@ -3,9 +3,9 @@
 This is the repository for the backend server for the StimuLink Loans app, a project created during the General Assembly Small Business Hackathon to help small businesses recover from COVID. It's a simple single page application built in ReactJS that takes inputted information on a users small business to calculate their estimated eligibility for a
 Payroll Protection Program (PPP) Loan.
 
-[Deployed Front End](https://sbh-ts2-2021.github.io/front-end/)
-[![Product Name Screen Shot][product-screenshot]](https://sbh-ts2-2021.github.io/front-end/)
-[Back End Repogit ](https://github.com/SBH-TS2-2021/backend)
+[Deployed Front End](https://sbh-ts2-2021.github.io/front-end/)  
+[![Product Name Screen Shot][product-screenshot]](https://sbh-ts2-2021.github.io/front-end/)  
+[Back End Repogit ](https://github.com/SBH-TS2-2021/backend)  
 
 ### Technologies Used
 
