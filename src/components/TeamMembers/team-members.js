@@ -51,7 +51,7 @@ const teamMembers = [
       'https://ca.slack-edge.com/T0351JZQ0-U01DFEW4MQV-39c4454418e5-512',
     description: 'Data Scientist',
     linkedin: 'https://www.linkedin.com/in/jaco-lau-499ab767/',
-    portfolio: '#'
+    portfolio: 'https://github.com/jaco-lau'
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const teamMembers = [
       'https://ca.slack-edge.com/T0351JZQ0-UUWJ5EJUB-52bae3e920b3-512',
     description: 'Data Scientist',
     linkedin: 'https://www.linkedin.com/in/kevinrenois/',
-    portfolio: '#'
+    portfolio: 'https://kevinrenois.github.io/'
   }
 ]
 

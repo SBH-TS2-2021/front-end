@@ -6,7 +6,7 @@ const Form = ({ handleSubmit, handleInputChange, form, handleReset }) => (
     <p>
       Each industry has a number that represents it called a NAICS code. Go{' '}
       <a
-        href="https://www.naics.com/naics-identification-help/"
+        href="https://www.naics.com/search"
         target="_blank"
         rel="noreferrer"
         className="form-link"
