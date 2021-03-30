@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/front-end/static/css/main.bdde58ed.chunk.css",
-    "main.js": "/front-end/static/js/main.22cf3b0f.chunk.js",
-    "main.js.map": "/front-end/static/js/main.22cf3b0f.chunk.js.map",
-    "runtime-main.js": "/front-end/static/js/runtime-main.93e2320f.js",
-    "runtime-main.js.map": "/front-end/static/js/runtime-main.93e2320f.js.map",
-    "static/js/2.a728411b.chunk.js": "/front-end/static/js/2.a728411b.chunk.js",
-    "static/js/2.a728411b.chunk.js.map": "/front-end/static/js/2.a728411b.chunk.js.map",
-    "static/js/3.9de1ec1a.chunk.js": "/front-end/static/js/3.9de1ec1a.chunk.js",
-    "static/js/3.9de1ec1a.chunk.js.map": "/front-end/static/js/3.9de1ec1a.chunk.js.map",
+    "main.css": "/front-end/static/css/main.b2f9c6e7.chunk.css",
+    "main.js": "/front-end/static/js/main.2c6a4f82.chunk.js",
+    "main.js.map": "/front-end/static/js/main.2c6a4f82.chunk.js.map",
+    "runtime-main.js": "/front-end/static/js/runtime-main.8906f936.js",
+    "runtime-main.js.map": "/front-end/static/js/runtime-main.8906f936.js.map",
+    "static/js/2.b082f883.chunk.js": "/front-end/static/js/2.b082f883.chunk.js",
+    "static/js/2.b082f883.chunk.js.map": "/front-end/static/js/2.b082f883.chunk.js.map",
+    "static/js/3.c64c7943.chunk.js": "/front-end/static/js/3.c64c7943.chunk.js",
+    "static/js/3.c64c7943.chunk.js.map": "/front-end/static/js/3.c64c7943.chunk.js.map",
     "index.html": "/front-end/index.html",
-    "static/css/main.bdde58ed.chunk.css.map": "/front-end/static/css/main.bdde58ed.chunk.css.map",
-    "static/js/2.a728411b.chunk.js.LICENSE.txt": "/front-end/static/js/2.a728411b.chunk.js.LICENSE.txt",
-    "static/media/hero.f12bbba9.jpg": "/front-end/static/media/hero.f12bbba9.jpg"
+    "static/css/main.b2f9c6e7.chunk.css.map": "/front-end/static/css/main.b2f9c6e7.chunk.css.map",
+    "static/js/2.b082f883.chunk.js.LICENSE.txt": "/front-end/static/js/2.b082f883.chunk.js.LICENSE.txt",
+    "static/media/hero.f12bbba9.jpg": "/front-end/static/media/hero.f12bbba9.jpg",
+    "static/media/linkedinicon.3c8fc727.png": "/front-end/static/media/linkedinicon.3c8fc727.png",
+    "static/media/websiteicon.387605ef.png": "/front-end/static/media/websiteicon.387605ef.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.93e2320f.js",
-    "static/js/2.a728411b.chunk.js",
-    "static/css/main.bdde58ed.chunk.css",
-    "static/js/main.22cf3b0f.chunk.js"
+    "static/js/runtime-main.8906f936.js",
+    "static/js/2.b082f883.chunk.js",
+    "static/css/main.b2f9c6e7.chunk.css",
+    "static/js/main.2c6a4f82.chunk.js"
   ]
 }
