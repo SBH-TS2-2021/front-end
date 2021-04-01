@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import './App.css'
 import Resources from './components/Resources/Resources'
 
@@ -42,36 +42,35 @@ class App extends Component {
     return (
       <div className="app">
         <Header />
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <>
-              <Hero />
-              <Copy />
-              <CreateForm
-                formData={this.formData}
-                showResult={this.showResult}
-                noResult={this.noResult}
-                clearResult={this.clearResult}
-              />
-
-              <div className="results">
-                {this.state.no_result_visibility
-                  ? 'This lender isnt a good match, please try with another lender'
-                  : null}
-
-                {this.state.result_visibility ? (
-                  <Resources
-                    LoanAmount={this.state.probabilities}
-                    Lender={this.state.lender}
-                  />
-                ) : null}
-              </div>
-            </>
-          )}
-        />
-        <Route exact path="/about-us" component={About} />
+        <Switch>
+          <Route path="/about-us" component={About} />
+          <Route
+            path="/"
+            render={() => (
+              <>
+                <Hero />
+                <Copy />
+                <CreateForm
+                  formData={this.formData}
+                  showResult={this.showResult}
+                  noResult={this.noResult}
+                  clearResult={this.clearResult}
+                />
+                <div className="results">
+                  {this.state.no_result_visibility
+                    ? 'This lender isnt a good match, please try with another lender'
+                    : null}
+                  {this.state.result_visibility ? (
+                    <Resources
+                      LoanAmount={this.state.probabilities}
+                      Lender={this.state.lender}
+                    />
+                  ) : null}
+                </div>
+              </>
+            )}
+          />
+        </Switch>
       </div>
     )
   }
