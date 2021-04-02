@@ -45,10 +45,8 @@ const resources = props => {
       </p>
 
       <p className={style.finePrint}>
-        {' '}
-        *Results were predicted with{' '}
-        {Math.round(props.LoanAmount[mostAccurate] * 100)}% accuracy. No amounts
-        are gaurenteed.{' '}
+        * Results were predicted with up to 80% accuracy. No amounts are
+        guaranteed.
       </p>
     </div>
   )
