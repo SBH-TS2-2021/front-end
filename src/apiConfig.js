@@ -1,6 +1,6 @@
 let apiUrl
 const apiUrls = {
-  production: '<herokuurl>',
+  production: 'https://stimulink.herokuapp.com/',
   development: 'http://localhost:5000/'
 }
 
